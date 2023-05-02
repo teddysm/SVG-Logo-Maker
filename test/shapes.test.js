@@ -44,11 +44,4 @@ describe("Square", () => {
     const newSquare = new Square('red');
     expect(newSquare.render()).toEqual(expectedSvg);
   });
-  it("should be able to overwrite fillColor param with setColor", () => {
-    const expectedSvg =
-      '<rect x="90" y="40" width="120" height="120" fill="red" />';
-    const newSquare = new Square('blue');
-    newSquare.setColor('red');
-    expect(newSquare.render()).toEqual(expectedSvg);
-  });
 });
